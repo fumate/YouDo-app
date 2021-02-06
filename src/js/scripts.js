@@ -13,11 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
     addBtn.addEventListener("click", event => {
         event.preventDefault();
         let youDoText = youDoform.textForTodos.value;
+        let removeBtn = document.createElement("button");
         let liEl = document.createElement("li");
+
+        removeBtn.innerText = "Remove";
 
         liEl.textContent = youDoText;
 
+        youDoList.prepend(removeBtn);
         youDoList.prepend(liEl);
+
+        removeBtn.addEventListener("click", event => {
+            liEl.remove();
+            removeBtn.remove();
+        })
+
 
 
 
