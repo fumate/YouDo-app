@@ -1,3 +1,6 @@
+#labelOfTextforTodos {
+    font-size: 24px;
+}
 ol {
     background: lightgrey;
     padding: 20px;
