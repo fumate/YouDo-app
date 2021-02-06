@@ -1,1 +1,12 @@
-/* Your styles */
+ol {
+    background: lightgrey;
+    padding: 20px;
+    width: 400px;
+    list-style: none;
+}
+ol li {
+    background: white;
+    padding: 20px;
+    margin: 10px auto
+}
+
